@@ -40,7 +40,7 @@
 		<div class="mt-sm">
 			<input type="file" id="file" style="display:none;" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
 			<a href="javascript:selectFile()">加载本地excel文件</a>
-			<a href="javascript:loadRemoteFile('https://github.com/jhj888-max/jhj888-max.giyhub.io/blob/main/data.xlsx')">加载远程excel文件</a>
+			<a href="javascript:loadRemoteFile('./data.xlsx')">加载远程excel文件</a>
 		</div>
 		
 		<p>结果输出：（下面表格可直接编辑导出）</p>
@@ -55,7 +55,7 @@
 		<input type="button" value="导出" onclick="exportSpecialExcel()"/>
 	</div>
 	<script type="text/javascript" src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="./js/xlsx.core.min.js"></script>
+	<script type="text/javascript" src="./xlsx.core.min.js"></script>
 	<script type="text/javascript">
 
 	function selectFile() {
